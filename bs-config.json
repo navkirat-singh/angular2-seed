@@ -1,0 +1,10 @@
+{
+  "port": 8888,
+  "files": ["./src/**/*.{html,htm,css,js}", "./bin/**/*.*"],
+  "server": {
+    "baseDir": "./bin",
+    "routes": {
+      "/src": "src"
+    }
+  }
+}

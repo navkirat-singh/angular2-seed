@@ -1,0 +1,43 @@
+{
+    "name": "angular-ts-app",
+    "dependencies": {
+        "@angular/common": "2.0.0",
+        "@angular/compiler": "2.0.0",
+        "@angular/core": "2.0.0",
+        "@angular/forms": "2.0.0",
+        "@angular/http": "2.0.0",
+        "@angular/platform-browser": "2.0.0",
+        "@angular/platform-browser-dynamic": "2.0.0",
+        "@angular/router": "3.0.0",
+        "@angular/upgrade": "2.0.0",
+        "systemjs": "0.19.27",
+        "core-js": "^2.4.1",
+        "reflect-metadata": "^0.1.3",
+        "rxjs": "5.0.0-beta.12",
+        "zone.js": "^0.6.23"
+    },
+    "devDependencies": {
+        "typescript": "1.8.10",
+        "typings": "1.3.2",
+        "lite-server": "2.2.2",
+        "npm-watch": "0.1.6"
+    },
+    "scripts": {
+        "clean":            "node build/clean.js",
+        "views":            "node build/views.js",
+        "build-ts":         "tsc",
+        "dependencies":     "node build/dependencies.js",
+        "watch":            "npm-watch",
+        "dev-server":       "lite-server",
+        "build-all":        "npm run clean && (npm run build-ts & npm run views & npm run dependencies)",
+        "launch":           "npm run build-all && npm run dev-server",
+        "update":           "npm run views & npm run build-ts"
+    },
+    "watch": {
+        "update": {
+            "patterns": ["src"],
+            "extensions": ["ts", "html"],
+            "quiet": false
+        }
+    }
+}

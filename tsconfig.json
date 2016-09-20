@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "classic",
+        "module": "system",
+        "outFile": "bin/main.js",
+        "sourceMap": true,
+        "target": "es5"
+    },
+    "files": [
+        "src/main.ts"
+    ]
+}

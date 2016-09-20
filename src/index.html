@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script type="text/javascript" src="system.js"></script>
+    <script>
+        System.config({
+            defaultJSExtensions: true    // Wasted hours to get here finally - https://github.com/systemjs/systemjs/issues/1238
+        });
+        System.import("main.js").then(function(mod) {
+        })
+        .catch(function(e) {
+            console.log(e);
+        });
+    </script>
+</head>
+
+<body>
+    Hello
+</body>
+
+</html>
