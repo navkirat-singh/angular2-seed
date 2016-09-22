@@ -2,7 +2,8 @@ var fs = require('fs');
 var path = require('path');
 
 var dependencies = [
-    './node_modules/systemjs/dist/system.js'
+    './node_modules/systemjs/dist/system.js',
+    'system.config.js'
 ]
 
 function copyDependencies() {

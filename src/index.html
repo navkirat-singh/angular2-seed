@@ -1,11 +1,14 @@
 <html>
 <head>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
     <script type="text/javascript" src="system.js"></script>
+    <script type="text/javascript" src="system.config.js"></script>
     <script>
-        System.config({
-            defaultJSExtensions: true    // Wasted hours to get here finally - https://github.com/systemjs/systemjs/issues/1238
-        });
         System.import("main.js").then(function(mod) {
+            console.log("Main module loaded");
         })
         .catch(function(e) {
             console.log(e);
@@ -14,7 +17,8 @@
 </head>
 
 <body>
-    Hello
+    <home>
+    </home>
 </body>
 
 </html>

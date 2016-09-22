@@ -31,7 +31,8 @@
         "dev-server":       "lite-server",
         "build-all":        "npm run clean && (npm run build-ts & npm run views & npm run dependencies)",
         "launch":           "npm run build-all && npm run dev-server",
-        "update":           "npm run views & npm run build-ts"
+        "update":           "npm run views & npm run build-ts",
+        "typings":          "typings install"
     },
     "watch": {
         "update": {
